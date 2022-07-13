@@ -136,7 +136,7 @@ h3{
 }
 /* PAGE: FOTOS */
 .galery{
-    width: 100vw;
+    width: 100%;
     height: 150vh;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
