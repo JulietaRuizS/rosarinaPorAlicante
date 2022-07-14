@@ -292,7 +292,7 @@ button{
 footer {
     padding: 15px;
     font-family: 'Roboto', sans-serif;
-    background-color: #cececac1;
+    background-image: linear-gradient(to top,  #cececac1, white);
     display: grid;
     grid-template-areas: " indice logo redes"
                         "  indice none derechos";
