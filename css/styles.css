@@ -5,7 +5,7 @@
 }
 /* HEADER */
 header {
-    background-color: #cececac1;
+    background-image: linear-gradient(to bottom,  #cececac1, white);
     font-family: 'Joan', serif;
     flex-wrap: wrap;
     position: sticky;
