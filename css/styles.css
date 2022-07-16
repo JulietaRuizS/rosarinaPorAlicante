@@ -106,6 +106,9 @@ h3{
     display:flex;
 
 }
+.links__img:hover {
+    transform: scale(1.25 , 1.25);
+}
 .ws {
     position: sticky;
     bottom: 0px;
@@ -265,6 +268,9 @@ h3{
     flex-direction: column;
     align-items: center;
     border: 1px solid #949491fc;
+}
+.card:hover {
+    transform: scale(1.10 , 1.10);
 }
 .card__inf{
     width: 90%;
