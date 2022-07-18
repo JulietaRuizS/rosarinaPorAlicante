@@ -119,9 +119,16 @@ h3{
 
 .ws__img {
     width: 50px;
+    
 }
 
 /* PAGE: CONTACTO */
+
+.form__img{
+    width: 300px;
+    margin: 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
 .form__name{
     margin: 10px;
 }
