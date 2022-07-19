@@ -5,7 +5,7 @@
 }
 /* HEADER */
 header {
-    background-image: linear-gradient(to bottom,  #cececac1, white);
+    background-image: linear-gradient(to bottom,  #e1e1bfc1, white);
     font-family: 'Joan', serif;
     flex-wrap: wrap;
     position: sticky;
@@ -13,13 +13,26 @@ header {
 }
 .header{
     display: flex;
+    background-image: linear-gradient(to bottom,  #d8d8cdd5, white);
 }
 .header__logo {
     width: 50px;
     height: 50px;
+    margin: 10px;
     display: flex;
 }
-.header__searchbar {
+.btn {
+    color: black;
+    border: solid black 1px;
+}
+.btn:hover{
+    transform: scale(1.1 , 1.1);
+    border: solid black 1px;
+    color: black;
+}
+
+
+/* .header__searchbar {
     list-style: none;
     flex-grow: 2px;
     display: flex;
@@ -35,7 +48,8 @@ header {
 .header__item a {
     color: black;
     text-decoration: none;
-}
+} */
+
 
 /* MAIN */
 h1{
@@ -127,23 +141,18 @@ h3{
 .form__img{
     width: 300px;
     margin: 10px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
 }
-.form__name{
-    margin: 10px;
-}
-.form__email{
-    margin: 10px;
-}
-.form__text{
-    margin: 10px;
-}
-.form__text--coment{
-    margin:  10px;
-}
+
 .form__buttom{
-    padding: 20px;
+    background-image: linear-gradient(100deg, #f1eacb, #f3f1e8fd );
+    border: none;
+    color: black;
+    padding: 10px;
 }
+
+
+
 /* PAGE: FOTOS */
 .galery{
     width: 100%;
@@ -386,6 +395,10 @@ a{
     }
     .indexconteiner {
     flex-direction: column;
+    }
+    /* PAGE CONTACTO */
+    .ocultar{
+        display: none;
     }
     /* PAGE: FOTOS */
     .galery{

@@ -19,42 +19,77 @@
 </head>
 <body>
     <header>    <!-- ENCABEZADO -->
-        <nav class="header">       <!-- BARRA DE NAVEGACION -->
-            <img class= "header__logo" src="../resources/apple-touch-icon.png" alt="logo">
-            <ul class="header__searchbar">
-                <li class="header__item"><a href="../index.html">Inicio</a> </li>
-                <li class="header__item"><a href="../pages/fotos.html"> Fotos </a></li>
-                <li class="header__item"><a href="../pages/guia-de-tramites.html"> Guia de tramites</a></li>
-                <li class="header__item"><a href="../pages/la-ciudad.html"> La ciudad</a></li>
-                <li class="header__item"><a href="../pages/contacto.html"> Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg header ">
+            <img class="header__logo" src="../resources/apple-touch-icon.png" alt="logo">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="Inicio" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="Fotos" href="fotos.html">Fotos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="guia-de-tramites.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Guia de Tramites
+                            </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="guia-de-tramites.html">Documentacion previa</a></li>
+                        <li><a class="dropdown-item" href="guia-de-tramites.html">Empadronamiento</a></li>
+                        <li><a class="dropdown-item" href="guia-de-tramites.html">Nie/Tie</a></li>
+                        <li><a class="dropdown-item" href="guia-de-tramites.html">Canje de Licencia</a></li> 
+                    </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="La Ciudad" href="la-ciudad.html">La Ciudad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="Contacto" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>        <!-- FORMULARIO DE CONTACTO -->
-        <h1>Contacto</h1>
-        <form method="post">
-            <div> <img class="form__img" src="../resources/arena.jpg" alt="imagen de playa"></div>
-            <div class="form__name">
-                <label>Nombre</label>
-                <input>
-            </div>
-            <div class="form__email">
-                <label>Email</label>
-                <input>
-            </div>
-            <div class="form__text">
-                <label> Dejanos tu comentario</label>
-            </div>
-            <div class= "form__text--coment">
-                <textarea>                     
-                </textarea>
-            </div>
-            <div class="form__buttom">
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar formulario">
-            </div>
-        </form>
-    </main> 
+        <main>
+            <section class="container-fluid">
+                <article class="row mx-5 mt-3">
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <h1>Contacto</h1>
+                        <p class="text-center">Dejanos tu consulta y te responderemos a la brevedad</p>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="name" class="form-control" id="floatingInput" placeholder="Nombe">
+                                <label for="floatingInput">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Escribe tu consulta o comentario</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <div class="d-grid d-md-flex justify-content-md-center my-3">
+                                <button class="btn form__buttom  mx-auto" type="submit">Enviar Formulario</button>
+                                <button class="btn form__buttom mx-auto" type="reset">Borrar Formulario</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                    <img class="img-fluid form__img ocultar" src="../resources/arena.jpg">
+                    </div>
+                </article>
+            </section>
+        </main> 
     <footer><!-- PIE DE PAGINA -->
         <div class="footer__logo">
             <img class= "footer__logo--grid" src="../resources/apple-touch-icon.png" alt="logo Rosarina por Alicante">
