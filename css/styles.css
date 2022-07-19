@@ -293,6 +293,9 @@ a{
     text-decoration: none;
 }
 
+.footer__indice ul li a:visited{
+    color: #f42d3d;
+}
 .footer__logo{
     grid-area: logo;
     display: flex;
