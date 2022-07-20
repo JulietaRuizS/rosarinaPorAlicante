@@ -1,0 +1,23 @@
+{
+  "name": "rosarina-por-alicante",
+  "version": "1.0.0",
+  "description": "<h1>Rosarina por Alicante</h1> <p> Este sitio es una ayuda para aquellos que quieran conocer la ciudad de Alicante y/o emigrar, ayudandolos con los tramites</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulietaRuizS/rosarinaPorAlicante.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulietaRuizS/rosarinaPorAlicante/issues"
+  },
+  "homepage": "https://github.com/JulietaRuizS/rosarinaPorAlicante#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

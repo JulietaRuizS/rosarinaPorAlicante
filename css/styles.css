@@ -262,15 +262,20 @@ h3{
 /* PAGE: LA CIUDAD */
 
 .cityitems{
+    margin: 10px;
     padding: 15px;
-    background-color: #bcbcb166;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 .cityitems :hover{
     transform: scale(1.1, 1.1);
 }
+.img-fluid{
+    margin: 15px;
+    padding: 15px;
+}
+
 /* FOOTER */
 footer {
     padding: 15px;

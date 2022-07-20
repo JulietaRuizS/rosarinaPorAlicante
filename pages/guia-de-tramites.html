@@ -60,99 +60,141 @@
         </nav>
     </header>
     <main>
-        <section> <!-- PRIMER SECCION -->
-            <div class="card" style="width: 25rem;">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <section class="container-fluid row mx-auto mb-2" > <!-- PRIMER SECCION -->
+            <article class="col-xs-12 col-md-6">  <!-- tarjeta uno -->
+                <div class=" card" style="width: 35rem;">
+                    <div id="carouseluno" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouseluno" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouseluno" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouseluno" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active card-img-top">
+                                <img src="../resources/doc-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/doc-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/doc-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouseluno" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouseluno" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active card-img-top">
-                            <img src="../resources/doc-1.jpg" class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DOCUMENTACION </h5>
                         </div>
-                        <div class="carousel-item card-img-top">
-                            <img src="../resources/doc-2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </article> 
+            <article class="col-xs-12 col-md-6 ">  <!-- tarjeta dos -->
+                <div class="card" style="width: 35rem;">
+                    <div id="carouseldos" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouseldos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouseldos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouseldos" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-item card-img-top">
-                            <img src="../resources/doc-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active card-img-top">
+                                <img src="../resources/nie-1.jpg" class="d-block w-100" alt=" primer imagen nie">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/nie-2.jpg" class="d-block w-100" alt="segunda imagen nie">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/nie-3.jpg" class="d-block w-100" alt="tercer imagen nie">
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouseldos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouseldos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title">NIE / CUE</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">DOCUMENTACION </h5>
-                    <p class="card-text">Siempre es importante estar organizados antes de emprender cualquier vieaje y mucho mas si vamos a emigrar. Esto nos va a permitir, primero ir conociendo mas el destino y segundo estar un poco mas relajados, algo mas que importante siendo uno de los momentos mas estresantes que se van a transitar.</p>
+            </article>
+            <article class="col-xs-12 col-md-6 ">  <!-- tarjeta tres-->
+                <div class="card" style="width: 35rem;">
+                    <div id="carouseltres" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouseltres" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouseltres" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouseltres" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active card-img-top">
+                                <img src="../resources/doc-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/doc-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/doc-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouseltres" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouseltres" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">CANJE DE LICENCIA</h5>
+                    </div>
                 </div>
-            </div>
+            </article>
+            <article class="col-xs-12 col-md-6 ">  <!-- tarjeta cuatro-->
+                <div class="card" style="width: 35rem;">
+                    <div id="carouselcuatro" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselcuatro" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselcuatro" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselcuatro" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active card-img-top">
+                                <img src="../resources/doc-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/doc-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item card-img-top">
+                                <img src="../resources/doc-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselcuatro" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselcuatro" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">EMPADRONAMIENTO </h5>
+                    </div>
+                </div>
+            </article>
+            
         </section>
-        <section> <!-- SEGUNDA SECCION -->
-            <div class="card" style="width: 25rem;">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active card-img-top">
-                            <img src="../resources/nie-1.jpg" class="d-block w-100" alt=" primer imagen nie">
-                        </div>
-                        <div class="carousel-item card-img-top">
-                            <img src="../resources/nie-2.jpg" class="d-block w-100" alt="segunda imagen nie">
-                        </div>
-                        <div class="carousel-item card-img-top">
-                            <img src="../resources/nie-3.jpg" class="d-block w-100" alt="tercer imagen nie">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">NIE / CUE</h5>
-                    <p class="card-text">Previo a tu llegada es fundamental pensar de que manera obtendras la documentacion necesaria para poder radicarte sin inconvenientes y poder luego buscar trabajo sin problemas!</p>
-                </div>
-            </div>
-        </section>
-            <!-- <article class="card">
-                <img class="formalities__img" src="../resources/empadronamiento.JPG" alt="imagen tramite ">
-                <div class="card__inf">
-                    <h2>Empadronamiento</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugit rem est nemo? In repellat unde blanditiis provident autem, et vero minima deserunt assumenda voluptatum fuga saepe id eos aspernatur.</p>
-                    <button> Ver mas</button>
-                </div>
-            </article>
-            <article class="card">
-                <img class="formalities__img" src="../resources/nie.jpg" alt="imagen Nie">
-                <div class="card__inf">
-                    <h2>Nie/Tie</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam voluptates laborum obcaecati! Assumenda sequi commodi repellat voluptas esse consequatur dolore optio, explicabo vitae eum tempore debitis velit! Quia, natus ipsam!</p>
-                    <button> Ver mas</button>
-                </div>
-            </article>
-            <article class="card">
-                <img class="formalities__img" src="../resources/licencia.JPG" alt="imagen licencia de conducir">
-                <div class="card__inf">
-                    <h2>Canje de Licencia</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam maxime ipsam dolore ducimus quae voluptates sequi sed tempore. Ipsum cupiditate possimus architecto molestias. Corrupti quam aut ipsa provident vero porro.</p>
-                    <button> Ver mas</button>
-                </div>
-            </article>
-        </section> -->
         <section class="ws">   <!-- ENLACE A WHATSAPP -->
             <a href="https:whatsapp.com" > <img class= "ws__img"src="../resources/whatsapp-2.png" alt="imgagen logo whatsapp"></a>
         </section>
