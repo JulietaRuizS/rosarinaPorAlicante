@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>    <!-- ENCABEZADO -->
-    <nav class="navbar navbar-expand-lg header ">
+    <nav class="navbar navbar-expand-lg header">
       <img class="header__logo" src="resources/apple-touch-icon.png" alt="logo">
       <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,15 +37,8 @@
                   <li class="nav-item">
                       <a class="nav-link " aria-current="Fotos" href="pages/fotos.html">Fotos</a>
                   </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link  dropdown-toggle" href="pages/guia-de-tramites.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"> Guia de Tramites
-                      </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="pages/guia-de-tramites.html">Documentacion previa</a></li>
-                  <li><a class="dropdown-item" href="pages/guia-de-tramites.html">Empadronamiento</a></li>
-                  <li><a class="dropdown-item" href="pages/guia-de-tramites.htmll">Nie/Cue</a></li>
-                  <li><a class="dropdown-item" href="pages/guia-de-tramites.html">Canje de Licencia</a></li> 
-              </ul>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="Fotos" href="pages/guia-de-tramites.html">Guia de Tramites</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link active" aria-current="La Ciudad" href="pages/la-ciudad.html">La Ciudad</a>
@@ -63,10 +56,10 @@
   </nav>
   </header>
   <main>
-    <section class="presentation">      <!-- primer seccion -->
+    <section class="presentation ">      <!-- primer seccion -->
       <h1 class="presentation__text animate__animated animate__pulse ">Rosarina por Alicante</h1>
     </section>
-    <section class="indexconteiner">       <!-- segunda seccion -->
+    <section class="indexconteiner col-8">       <!-- segunda seccion -->
       <article class="introduction">  
         <h2>Bienvenidos</h2>
         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta molestiae, doloribus ad pariatur quia tempora nobis dolorum voluptates suscipit corrupti labore, quas minima officia eum unde architecto. Esse, quibusdam. Nesciunt.
@@ -75,11 +68,18 @@
       Odit pariatur iusto provident eos nihil quaerat quidem id autem eius sint voluptates mollitia ipsam similique fugiat praesentium cupiditate, dolor tenetur. Cumque, iusto ullam. Dolorem quos perspiciatis natus voluptates aliquid?
       Provident labore sint dicta exercitationem unde nulla velit beatae et debitis? Tenetur quo vel unde sint perferendis deleniti. Sed voluptate quibusdam veritatis cumque quaerat alias doloremque mollitia. Ea, reiciendis labore.</p>
       </article>
+    </section>
+    <section class="col-4 d-flex justify-content-md-center">
+      <div class="row mx-auto">
+        <button class="btn btn-primary" type="button">Susbritite</button>
+      </div>
+    </section>
+    <section class="col-4 d-grid d-md-flex justify-content-md-end ">
       <article class="links"> 
         <span> Lo mas visitado</span>
-        <a href="pages/guia-de-tramites.html"><img class="links__img" src="resources/licencia.JPG" alt=" Canje de Licencia">  </a>
+        <a href="pages/guia-de-tramites.html"> <img class= "links__img" src="resources/doc-1.jpg" alt="primer diapositiva"> </a>
         <span> Ultimas novedades</span>
-        <a href="resources/hogueras varias.JPG"><img class= "links__img"src="resources/hogueras varias.JPG" alt="imagenes varias hogueras"></a>
+        <a href="pages/fotos.html"><img class= "links__img"src="resources/panoramica-castillo-santa-barbara-alicante.jpg" alt="imagene casillo santa barbara"></a>
       </article>
     </section>
     <section class="ws">   <!-- ENLACE A WHATSAPP -->

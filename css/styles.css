@@ -136,116 +136,40 @@ h3{
 }
 
 /* PAGE: FOTOS */
-.galery{
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
     width: 100%;
-    height: 150vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 2fr 1fr 2fr 2fr 2fr;
-    grid-template-areas: "castillo alicante esplanada"
-                        "postiguet alicante esplanada"
-                        "palmera benidorm noche"
-                        "hogueras barco arena"
-                        "hogueras ninot hoguerasvs";
-    gap: 5px;
-    padding: 5px;
-    transition: .2s;
-    filter: grayscale(100%);
-}
-.galery:hover {
-    filter: grayscale(0%);
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 
-.castillo{
-    grid-area: castillo;
-    background-image: url("../resources/castillo\ santa\ barbara.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.alicante{
-    grid-area: alicante;
-    background-image: url("../resources/alicante.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.esplanada{
-    grid-area: esplanada;
-    background-image: url("../resources/esplanada.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.postiguet{
-    grid-area: postiguet;
-    background-image: url("../resources/postiguet.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.palmera{
-    grid-area: palmera;
-    background-image: url("../resources/palmera.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
-.benidorm{
-    grid-area: benidorm;
-    background-image: url("../resources/benidorm-470744_960_720.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.tz-gallery img {
+    border-radius: 4px;
 }
-.noche{
-    grid-area: noche;
-    background-image: url("../resources/noche.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.baguetteBox-button {
+    background-color: transparent !important;
 }
-.arena{
-    grid-area: arena;
-    background-image: url("../resources/arena.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.barco{
-    grid-area: barco;
-    background-image: url("../resources/barco.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ninot{
-    grid-area: ninot;
-    background-image: url("../resources/ninot 2.JPG");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.hoguerasvs{
-    grid-area: hoguerasvs;
-    background-image: url("../resources/ninot.JPG");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.hogueras{
-    grid-area: hogueras;
-    background-image: url("../resources/hogueras.JPG");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.galery__comment{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-}
+
 
 /* PAGE: GUIA DE TRAMITES */
 
@@ -363,22 +287,10 @@ a{
     }
     .btn{
         margin: 10px;
+        padding: 10px;
     }
     /* PAGE: FOTOS */
-    .galery{
-        height: 1200px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: "castillo"
-                            "alicante"
-                            "esplanada"
-                            "postiguet"
-                            "noche"
-                            "arena"
-                            "barco"
-                            "ninot"
-                            "hoguerasvs";
-    }
+
     /* PAGE: LA CIUDAD */
 
     .cityitems{
@@ -418,14 +330,12 @@ a{
     .header__searchbar {
         flex-grow: 0;
     }
-    /* PAGE: FOTOS */
-    .galery{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(5,1fr);
-        grid-template-areas: "castillo alicante esplanada"
-                            "postiguet alicante esplanada"
-                            "palmera benidorm noche"
-                            "hogueras barco arena"
-                            "hogueras ninot hoguerasvs";
+    /* PAGE CONTACTO */
+    .ocultar{
+        display: none;
+    }
+    .btn{
+        margin: 10px;
+        padding: 10px;
     }
 }
