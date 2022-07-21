@@ -55,6 +55,10 @@ h3{
     background-color: #bcbcb166;
     text-align: left;
 }
+span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
 
 /* PAGE: INDEX */
 .presentation{
@@ -99,7 +103,7 @@ h3{
     color: black;
 }
 .links__img{
-    width: 250px;
+    width: 350px;
     margin: 40px;
     display:flex;
 
@@ -124,8 +128,10 @@ h3{
 
 .form__img{
     width: 300px;
-    margin: 10px;
+    margin: 15px;
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    display: flex;
+    justify-self: auto;
 }
 
 .form__buttom{
@@ -240,12 +246,13 @@ a{
     grid-area: redes;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 5vh;
+    align-items: center;
+    height: 3vh;
     margin: 15px;
 }
 
 .footer__rights {
+    font-size: 10px;
     grid-area: derechos;
     display: flex;
     flex-direction:column;
@@ -338,4 +345,5 @@ a{
         margin: 10px;
         padding: 10px;
     }
+
 }
