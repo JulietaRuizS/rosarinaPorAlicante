@@ -1,7 +1,7 @@
 footer {
     padding: 15px;
     font-family: $font-principal;
-    background-image: linear-gradient(to top,  #cececac1, white);
+    background-image: linear-gradient(to top,  $background-color, white);
     display: grid;
     grid-template-areas: " indice logo redes"
                         "  indice none derechos"; 
@@ -13,10 +13,8 @@ footer {
                 & a:visited{
                     color: #f42d3d;
                 }
-            }
-            
+            } 
         }
-        
         &__logo{
             grid-area: logo;
             display: flex;
@@ -28,7 +26,6 @@ footer {
                 width: 10vh;
             }
         }
-        
         &__networks {
             grid-area: redes;
             display: flex;
@@ -37,7 +34,6 @@ footer {
             height: 3vh;
             margin: 15px;
         }
-        
         &__rights {
             font-size: 10px;
             grid-area: derechos;
@@ -46,7 +42,6 @@ footer {
             text-align: center;
             justify-content: center;
         }
-        
     }
 }
 

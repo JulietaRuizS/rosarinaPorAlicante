@@ -1,0 +1,47 @@
+/* PAGE: INDEX */
+.presentation{
+    display: grid;
+    height: 100vh;
+    background-image: url("../resources/mujer-playa.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+        &__text{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin: 15px;
+            color: $color-title;
+            text-shadow: 1px 2px 2px white;
+            font-size: 70px;
+            display: flex;
+            align-items: flex-start;
+            justify-content:center ;
+        }
+}
+.indexconteiner {
+    color: $color-title;
+    font-family: $font-titles;
+    background-color: $background-color;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.introduction{
+    font-family: $font-principal;
+    line-height: 1,5;
+}
+.links{
+    padding: 10px;
+    color: $color-principal;
+    &__img{
+        width: 350px;
+        margin: 40px;
+        display:flex;
+        &:hover {
+            transform: scale(1.25 , 1.25);
+        }
+    } 
+}

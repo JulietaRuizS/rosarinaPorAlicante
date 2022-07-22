@@ -1,12 +1,12 @@
 header {
-    background-image: linear-gradient(to bottom,  #e1e1bfc1, white);
+    background-image: linear-gradient(to bottom,  $background-color, white);
     font-family: $font-titles;
     flex-wrap: wrap;
     position: sticky;
     top: 0px;
     .header{
         display: flex;
-        background-image: linear-gradient(to bottom,  #d8d8cdd5, white);
+        background-image: linear-gradient(to bottom, $background-color, white);
         &__logo {
             width: 50px;
             height: 50px;
@@ -14,8 +14,5 @@ header {
             display: flex;
         }
     }
-    .nav-link:visited{
-        color: #f42d3d;
-    } 
 }
 

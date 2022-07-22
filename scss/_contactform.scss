@@ -1,0 +1,13 @@
+.form{
+    &__img{
+        width: 300px;
+        margin: 15px;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+    &__buttom{
+        background-image: linear-gradient(100deg, #f1eacb, #f3f1e8fd );
+        border: none;
+        color: $color-principal;
+        padding: 10px;
+    }
+}
