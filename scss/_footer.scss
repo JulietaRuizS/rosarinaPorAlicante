@@ -1,0 +1,53 @@
+
+footer {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top,  #cececac1, white);
+    display: grid;
+    grid-template-areas: " indice logo redes"
+                        "  indice none derechos";
+}
+.footer__indice {
+    grid-area: indice;
+}
+.footer__indice ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer__indice ul li a:visited{
+    color: #f42d3d;
+}
+.footer__logo{
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+}
+.footer__logo--grid{
+    width: 10vh;
+}
+.footer__networks {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    margin: 15px;
+}
+
+.footer__rights {
+    font-size: 10px;
+    grid-area: derechos;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+}

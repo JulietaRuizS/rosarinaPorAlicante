@@ -1,0 +1,87 @@
+/* media querie CELULAR */
+@media (min-width:320px ) and (max-width: 575px) {
+
+    /* HEADER */
+
+    header {
+        flex-wrap: wrap;
+        position:unset;
+    }
+    .header__searchbar {
+        flex-direction: column; 
+        flex-grow: 0;
+    }
+    .header__item{
+        flex-direction: column;
+    }
+    /* PAGE: INDEX */
+
+    .presentation{
+    grid-template-columns: 1fr;
+    }
+    .presentation__text{
+    grid-row: 1/2;
+    font-size: 40px;
+    }
+    .indexconteiner {
+    flex-direction: column;
+    }
+    /* PAGE CONTACTO */
+    .ocultar{
+        display: none;
+    }
+    .btn{
+        margin: 10px;
+        padding: 10px;
+    }
+    /* PAGE: FOTOS */
+
+    /* PAGE: LA CIUDAD */
+
+    .cityitems{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-areas: "logo"
+                            "indice"
+                            "redes"
+                            "derechos";
+    }
+
+    a{
+    font-size: 10px;
+    }
+    .footer__logo--grid{
+        width: 10vh;
+    }
+    .footer__networks {
+        height: 3vh;
+    }
+    .footer__rights{
+        font-size: 10px;
+    }
+
+}
+
+/*  media querie TABLET */
+@media (min-width:576px ) and (max-width: 992px) {
+
+    /* HEADER */
+    .header__searchbar {
+        flex-grow: 0;
+    }
+    /* PAGE CONTACTO */
+    .ocultar{
+        display: none;
+    }
+    .btn{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
