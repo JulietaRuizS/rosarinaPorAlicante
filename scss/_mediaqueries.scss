@@ -6,25 +6,27 @@
     header {
         flex-wrap: wrap;
         position:unset;
-    }
-    .header__searchbar {
-        flex-direction: column; 
-        flex-grow: 0;
-    }
-    .header__item{
-        flex-direction: column;
-    }
+
+        &__searchbar {
+            flex-direction: column; 
+            flex-grow: 0;
+        }
+        &__item{
+            flex-direction: column;
+        }
+}
     /* PAGE: INDEX */
 
     .presentation{
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        &__text{
+            grid-row: 1/2;
+            font-size: 40px;
+            }
     }
-    .presentation__text{
-    grid-row: 1/2;
-    font-size: 40px;
-    }
+    
     .indexconteiner {
-    flex-direction: column;
+        flex-direction: column;
     }
     /* PAGE CONTACTO */
     .ocultar{
@@ -34,7 +36,7 @@
         margin: 10px;
         padding: 10px;
     }
-    /* PAGE: FOTOS */
+
 
     /* PAGE: LA CIUDAD */
 
@@ -51,21 +53,21 @@
                             "indice"
                             "redes"
                             "derechos";
+        .footer{
+            a{
+                font-size: 10px;
+            }
+            &__logo--grid{
+                width: 10vh;
+            }
+            &__networks {
+                height: 3vh;
+            }
+            &__rights{
+                font-size: 10px;
+            }  
+        }
     }
-
-    a{
-    font-size: 10px;
-    }
-    .footer__logo--grid{
-        width: 10vh;
-    }
-    .footer__networks {
-        height: 3vh;
-    }
-    .footer__rights{
-        font-size: 10px;
-    }
-
 }
 
 /*  media querie TABLET */

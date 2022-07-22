@@ -9,44 +9,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/* HEADER */
-header {
-    background-image: linear-gradient(to bottom,  #e1e1bfc1, white);
-    font-family: 'Joan', serif;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0px;
 
-        .header{
-            display: flex;
-            background-image: linear-gradient(to bottom,  #d8d8cdd5, white);
-            &_logo {
-                width: 50px;
-                height: 50px;
-                margin: 10px;
-                display: flex;
-            }
-        }
-}
 
-.nav-link:visited{
-    color: #f42d3d;
-}
-.btn {
-    color: $color-principal;
-    border: solid black 1px;
-}
-.btn:hover{
-    background-color: rgba(250, 235, 215, 0.71);
-    transform: scale(1.1 , 1.1);
-    border: solid black 1px;
-    color: $color-principal;
-}
 
 /* MAIN */
 h1{
     color: rgb(106, 105, 102);
-    font-family: 'Joan', serif;
+    font-family: $font-titles;
     font-size: 35px;
     display: flex;
     justify-content: center;
@@ -54,20 +23,34 @@ h1{
     
 }
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-principal;
     padding: 16px;
 }
 h3{
     color: rgb(106, 105, 102);
-    font-family: 'Joan', serif;
+    font-family: $font-titles;
     background-color: #bcbcb166;
     text-align: left;
 }
 span{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-principal;
     font-size: 25px;
 }
-
+a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.btn {
+    color: black;
+    border: solid black 1px;
+    &:hover{
+        background-color: rgba(250, 235, 215, 0.71);
+        transform: scale(1.1 , 1.1);
+        border: solid black 1px;
+        color: black;
+    }
+}
 /* PAGE: INDEX */
 .presentation{
     display: grid;
@@ -77,23 +60,23 @@ span{
     background-position: center;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+        &__text{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin: 15px;
+            color: rgb(68, 67, 67);
+            text-shadow: 1px 2px 2px white;
+            font-size: 70px;
+            display: flex;
+            align-items: flex-start;
+            justify-content:center ;
+        }
 }
-.presentation__text{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin: 15px;
-    color: rgb(68, 67, 67);
-    text-shadow: 1px 2px 2px white;
-    font-size: 70px;
-    display: flex;
-    align-items: flex-start;
-    justify-content:center ;
 
-}
 
 .indexconteiner {
     color: rgb(106, 105, 102);
-    font-family: 'Joan', serif;
+    font-family: $font-titles;
     background-color: #bcbcb166;
     text-align: center;
     display: flex;
@@ -103,48 +86,46 @@ span{
 }
 
 .introduction{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-principal;
     line-height: 1,5;
 }
 .links{
     padding: 10px;
     color: $color-principal;
+    &__img{
+        width: 350px;
+        margin: 40px;
+        display:flex;
+        &:hover {
+            transform: scale(1.25 , 1.25);
+        }
+    } 
 }
-.links__img{
-    width: 350px;
-    margin: 40px;
-    display:flex;
 
-}
-.links__img:hover {
-    transform: scale(1.25 , 1.25);
-}
 .ws {
     position: sticky;
     bottom: 0px;
     right: 10px;
     display:flex;
     justify-content: end;
+    &__img {
+        width: 30px;
+        
+    }
 }
-
-.ws__img {
-    width: 50px;
-    
-}
-
 /* PAGE: CONTACTO */
-
-.form__img{
-    width: 300px;
-    margin: 15px;
-    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-}
-
-.form__buttom{
-    background-image: linear-gradient(100deg, #f1eacb, #f3f1e8fd );
-    border: none;
-    color: $color-principal;
-    padding: 10px;
+.form{
+    &__img{
+        width: 300px;
+        margin: 15px;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+    &__buttom{
+        background-image: linear-gradient(100deg, #f1eacb, #f3f1e8fd );
+        border: none;
+        color: $color-principal;
+        padding: 10px;
+    }
 }
 
 /* PAGE: FOTOS */
@@ -155,32 +136,30 @@ span{
     min-height: 100vh;
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    .tz-gallery {
+        padding: 40px;
+    
+        &__.lightbox img {
+            width: 100%;
+            margin-bottom: 30px;
+            transition: 0.2s ease-in-out;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+            }
+        }
+        &__img {
+            border-radius: 4px;
+        }
+        .baguetteBox-button {
+            background-color: transparent !important;
+        }
+    }
 }
 
-.tz-gallery {
-    padding: 40px;
-}
+    
 
-.tz-gallery .lightbox img {
-    width: 100%;
-    margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-}
-
-
-.tz-gallery .lightbox img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
-
-.tz-gallery img {
-    border-radius: 4px;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
 
 
 /* PAGE: GUIA DE TRAMITES */
