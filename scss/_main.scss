@@ -2,7 +2,7 @@
 h1{
     color: $color-title;
     font-family: $font-titles;
-    font-size: 35px;
+    font-size: $size-titles;
     display: flex;
     justify-content: center;
     
@@ -10,6 +10,7 @@ h1{
 }
 p {
     font-family: $font-principal;
+    font-size: $font-principal;
     padding: 16px;
 }
 h3{
@@ -20,10 +21,10 @@ h3{
 }
 span{
     font-family: $font-principal;
-    font-size: 25px;
+    font-size: $font-principal;
 }
 a{
-    font-size: 16px;
+    font-size: $font-principal;
     color: $color-principal;
     text-decoration: none;
 }
@@ -62,7 +63,7 @@ a{
 }
 
 
-.cityitems{
+.city-items{
     margin: 10px;
     padding: 15px;
     display: flex;
@@ -71,6 +72,7 @@ a{
         transform: scale(1.1, 1.1);
     } 
 }
+
 
 .img-fluid{
     margin: 15px;

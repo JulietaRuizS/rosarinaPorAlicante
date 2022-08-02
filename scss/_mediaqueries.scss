@@ -21,7 +21,7 @@
         grid-template-columns: 1fr;
         &__text{
             grid-row: 1/2;
-            font-size: 40px;
+            font-size: $size-text;
             }
     }
     
@@ -40,10 +40,20 @@
 
     /* PAGE: LA CIUDAD */
 
-    .cityitems{
+    .city-items{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
+        margin: auto;
+        & :hover{
+            transform: none;
+        } 
+    }
+    
+    .city-video{
+        padding: 10px;
+    }
+    .city-map{
+        padding: 10px;
     }
 
     /* FOOTER */
