@@ -36,6 +36,7 @@ footer {
         }
         &__rights {
             font-size: 10px;
+            font-family: $font-principal;
             grid-area: derechos;
             display: flex;
             flex-direction:column;

@@ -28,6 +28,9 @@
     .indexconteiner {
         flex-direction: column;
     }
+    .links_img {
+        grid-template-columns:1fr;
+    }
     /* PAGE CONTACTO */
     .ocultar{
         display: none;
@@ -39,21 +42,21 @@
 
 
     /* PAGE: LA CIUDAD */
-
-    .city-items{
+    .city{
+        &-items{
         display: flex;
         flex-direction: column; 
         margin: auto;
-        & :hover{
+            & :hover{
             transform: none;
-        } 
-    }
-    
-    .city-video{
-        padding: 10px;
-    }
-    .city-map{
-        padding: 10px;
+            } 
+        }
+        &-video{
+            padding: 10px;
+        }
+        &-map{
+            padding: 10px;
+        }
     }
 
     /* FOOTER */
