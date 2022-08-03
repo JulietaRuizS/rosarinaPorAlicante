@@ -1,6 +1,10 @@
 
 @mixin fonts ($size, $family) {
     font-size: $size;
-    font-family: $family;
-    
+    font-family: $family; 
+}
+@mixin flex ($display, $justify,$direction){
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $direction;
 }

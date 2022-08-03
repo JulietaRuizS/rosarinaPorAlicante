@@ -1,3 +1,7 @@
+/* COLORS */
+/* BACKGROUND */
+/* FONTS */
+/* FONT SIZE */
 footer {
   padding: 15px;
   font-family: "Roboto", sans-serif;
@@ -13,8 +17,8 @@ footer {
   footer .footer__logo {
     grid-area: logo;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center; }
     footer .footer__logo--grid {
@@ -31,9 +35,9 @@ footer {
     font-family: "Roboto", sans-serif;
     grid-area: derechos;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    justify-content: center; }
+    text-align: center; }
 
 header {
   background-image: linear-gradient(to bottom, #cececac1, white);
@@ -53,29 +57,29 @@ header {
 /* MAIN */
 h1 {
   color: #444343;
-  font-family: "Joan", serif;
   font-size: 3rem;
+  font-family: "Joan", serif;
   display: flex;
   justify-content: center; }
 
 p {
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  font-size: "Roboto", sans-serif;
   padding: 16px; }
 
 h3 {
-  color: #444343;
-  font-family: "Joan", serif;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   background-color: #cececac1;
   text-align: left; }
 
 span {
-  font-family: "Roboto", sans-serif;
-  font-size: "Roboto", sans-serif; }
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif; }
 
 a {
-  font-size: "Roboto", sans-serif;
-  color: black;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   text-decoration: none; }
 
 .btn {
@@ -162,14 +166,16 @@ a {
 
 .indexconteiner {
   color: #444343;
+  font-size: 3rem;
   font-family: "Joan", serif;
   background-color: #cececac1;
   text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-direction: row; }
 
 .introduction {
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   line-height: 1,5; }
 
@@ -213,8 +219,6 @@ a {
       font-size: 1rem; }
   .indexconteiner {
     flex-direction: column; }
-  .links_img {
-    grid-template-columns: 1fr; }
   /* PAGE CONTACTO */
   .ocultar {
     display: none; }

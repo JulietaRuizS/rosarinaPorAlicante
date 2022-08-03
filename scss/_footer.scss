@@ -17,9 +17,7 @@ footer {
         }
         &__logo{
             grid-area: logo;
-            display: flex;
-            flex-direction: column;
-            justify-content: center ;
+            @include flex(flex,center,column);
             align-items: center;
             text-align: center;
             &--grid{
@@ -35,13 +33,10 @@ footer {
             margin: 15px;
         }
         &__rights {
-            font-size: 10px;
-            font-family: $font-principal;
+            @include fonts(10px, $font-principal);
             grid-area: derechos;
-            display: flex;
-            flex-direction:column;
+            @include flex(flex,center,column);
             text-align: center;
-            justify-content: center;
         }
     }
 }

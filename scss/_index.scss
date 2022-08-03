@@ -21,16 +21,14 @@
 }
 .indexconteiner {
     color: $color-title;
-    font-family: $font-titles;
+    @include fonts($size-titles, $font-titles);
     background-color: $background-color;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex (flex, space-between,row);
     
 }
 .introduction{
-    font-family: $font-principal;
+    @include fonts($size-text, $font-principal);
     line-height: 1,5;
 }
 .links{

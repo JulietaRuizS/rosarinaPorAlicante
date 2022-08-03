@@ -1,31 +1,26 @@
 /* MAIN */
 h1{
     color: $color-title;
-    font-family: $font-titles;
-    font-size: $size-titles;
+    @include fonts($size-titles,$font-titles);
     display: flex;
     justify-content: center;
     
     
 }
 p {
-    font-family: $font-principal;
-    font-size: $font-principal;
+    @include fonts($size-text, $font-principal);
     padding: 16px;
 }
 h3{
-    color: $color-title;
-    font-family: $font-titles;
+    @include fonts($size-text,$font-principal);
     background-color: $background-color;
     text-align: left;
 }
 span{
-    font-family: $font-principal;
-    font-size: $font-principal;
+    @include fonts($size-text,$font-principal);
 }
 a{
-    font-size: $font-principal;
-    color: $color-principal;
+    @include fonts($size-text,$font-principal);
     text-decoration: none;
 }
 
