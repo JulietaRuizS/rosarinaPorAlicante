@@ -12,7 +12,7 @@ p {
     padding: 16px;
 }
 h3{
-    @include fonts($size-text,$font-principal);
+    @include fonts($size-subtitles,$font-principal);
     background-color: $background-color;
     text-align: left;
 }

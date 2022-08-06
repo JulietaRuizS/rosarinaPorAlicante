@@ -68,7 +68,7 @@ p {
   padding: 16px; }
 
 h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   background-color: #cececac1;
   text-align: left; }
@@ -182,6 +182,10 @@ a {
 .links {
   padding: 10px;
   color: black; }
+  .links_span {
+    padding: 10px;
+    font-size: 2rem;
+    font-family: "Joan", serif; }
   .links__img {
     width: 350px;
     margin: 40px;
@@ -218,16 +222,18 @@ a {
       grid-row: 1/2; }
   .indexconteiner {
     flex-direction: column; }
-  .links {
-    flex-direction: column; }
+  .links__img {
+    margin: 10px; }
     .links__img:hover {
       transform: none; }
+  .ws {
+    margin: 10px; }
   /* PAGE CONTACTO */
-  .ocultar {
-    display: none; }
   .btn {
     margin: 10px;
     padding: 10px; }
+  .form__img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
   /* PAGE: LA CIUDAD */
   .city-items {
     display: flex;
@@ -257,8 +263,6 @@ a {
   .header__searchbar {
     flex-grow: 0; }
   /* PAGE CONTACTO */
-  .ocultar {
-    display: none; }
   .btn {
     margin: 10px;
     padding: 10px; } }

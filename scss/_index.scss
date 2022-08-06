@@ -34,6 +34,10 @@
 .links{
     padding: 10px;
     color: $color-principal;
+    &_span{
+        padding: 10px;
+        @include fonts ($size-subtitles, $font-titles);  
+    }
     &__img{
         width: 350px;
         margin: 40px;

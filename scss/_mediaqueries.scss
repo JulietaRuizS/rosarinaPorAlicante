@@ -28,23 +28,27 @@
         flex-direction: column;
     }
     .links{
-        flex-direction: column;
         &__img{
+            margin: 10px;
             &:hover {
                 transform: none;
             }
         } 
     }
-    /* PAGE CONTACTO */
-    .ocultar{
-        display: none;
+    .ws {
+        margin: 10px;
     }
+    /* PAGE CONTACTO */
+    
     .btn{
         margin: 10px;
         padding: 10px;
     }
-
-
+    .form{
+        &__img{
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        }
+    }
     /* PAGE: LA CIUDAD */
     .city{
         &-items{
@@ -95,9 +99,6 @@
         flex-grow: 0;
     }
     /* PAGE CONTACTO */
-    .ocultar{
-        display: none;
-    }
     .btn{
         margin: 10px;
         padding: 10px;
