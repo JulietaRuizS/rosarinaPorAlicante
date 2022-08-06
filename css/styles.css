@@ -215,10 +215,13 @@ a {
   .presentation {
     grid-template-columns: 1fr; }
     .presentation__text {
-      grid-row: 1/2;
-      font-size: 1rem; }
+      grid-row: 1/2; }
   .indexconteiner {
     flex-direction: column; }
+  .links {
+    flex-direction: column; }
+    .links__img:hover {
+      transform: none; }
   /* PAGE CONTACTO */
   .ocultar {
     display: none; }

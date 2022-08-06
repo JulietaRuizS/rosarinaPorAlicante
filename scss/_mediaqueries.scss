@@ -21,12 +21,19 @@
         grid-template-columns: 1fr;
         &__text{
             grid-row: 1/2;
-            font-size: $size-text;
             }
     }
     
     .indexconteiner {
         flex-direction: column;
+    }
+    .links{
+        flex-direction: column;
+        &__img{
+            &:hover {
+                transform: none;
+            }
+        } 
     }
     /* PAGE CONTACTO */
     .ocultar{
