@@ -179,19 +179,19 @@ a {
   font-family: "Roboto", sans-serif;
   line-height: 1,5; }
 
-.links {
-  padding: 10px;
-  color: black; }
-  .links_span {
-    padding: 10px;
-    font-size: 2rem;
-    font-family: "Joan", serif; }
-  .links__img {
-    width: 350px;
-    margin: 40px;
-    display: flex; }
-    .links__img:hover {
-      transform: scale(1.25, 1.25); }
+.cardconteiner {
+  width: 600px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row; }
+
+.cardone {
+  margin: 10x;
+  padding: 10px; }
+
+.cardtwo {
+  margin: 10x;
+  padding: 10px; }
 
 .form__img {
   width: 300px;
@@ -222,10 +222,11 @@ a {
       grid-row: 1/2; }
   .indexconteiner {
     flex-direction: column; }
-  .links__img {
-    margin: 10px; }
-    .links__img:hover {
-      transform: none; }
+  .cardconteiner {
+    width: 350px;
+    margin: 15px;
+    flex-direction: column;
+    justify-content: center; }
   .ws {
     margin: 10px; }
   /* PAGE CONTACTO */
@@ -245,6 +246,7 @@ a {
     padding: 10px; }
   .city-map {
     padding: 10px; }
+  /* GUIADE */
   /* FOOTER */
   footer {
     grid-template-areas: "logo" "indice" "redes" "derechos"; }

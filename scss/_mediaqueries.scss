@@ -27,14 +27,14 @@
     .indexconteiner {
         flex-direction: column;
     }
-    .links{
-        &__img{
-            margin: 10px;
-            &:hover {
-                transform: none;
-            }
-        } 
+    .cardconteiner{
+        width: 350px;
+        margin: 15px;
+        flex-direction: column;
+        justify-content: center;
+
     }
+    
     .ws {
         margin: 10px;
     }
@@ -66,6 +66,7 @@
             padding: 10px;
         }
     }
+    /* GUIADE */
 
     /* FOOTER */
 
