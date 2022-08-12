@@ -1,6 +1,7 @@
 footer {
     padding: 15px;
     font-family: $font-principal;
+    color: $color-title ;
     background-image: linear-gradient(to top,  $background-color, white);
     display: grid;
     grid-template-areas: " indice logo redes"
