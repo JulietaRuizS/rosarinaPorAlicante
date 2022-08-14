@@ -5,6 +5,7 @@
 footer {
   padding: 15px;
   font-family: "Roboto", sans-serif;
+  color: #444343;
   background-image: linear-gradient(to top, #cececac1, white);
   display: grid;
   grid-template-areas: " indice logo redes" "  indice none derechos"; }
@@ -55,6 +56,9 @@ header {
       display: flex; }
 
 /* MAIN */
+main {
+  overflow-x: hidden; }
+
 h1 {
   color: #444343;
   font-size: 3rem;
@@ -86,7 +90,7 @@ a {
   color: #444343;
   border: solid black 1px; }
   .btn:hover {
-    background-color: rgba(250, 235, 215, 0.71);
+    background-color: rgba(248, 247, 245, 0.855);
     transform: scale(1.1, 1.1);
     border: solid black 1px;
     color: black; }
@@ -106,7 +110,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #949491fc; }
+  border: 1px solid #949491fc;
+  z-index: -1; }
 
 .guide__card {
   width: 950px; }
@@ -120,7 +125,7 @@ a {
     transform: scale(1.1, 1.1); }
 
 .img-fluid {
-  margin: 15px;
+  margin: 2px;
   padding: 15px; }
 
 .nav-link:visited {
@@ -209,8 +214,7 @@ a {
 @media (min-width: 320px) and (max-width: 575px) {
   /* HEADER */
   header {
-    flex-wrap: wrap;
-    position: unset; }
+    flex-wrap: wrap; }
     header__searchbar {
       flex-direction: column;
       flex-grow: 0; }
@@ -232,7 +236,8 @@ a {
     flex-direction: column;
     justify-content: center; }
   .ws {
-    margin: 10px; }
+    margin: 10px;
+    position: sticky; }
   /* PAGE CONTACTO */
   .btn {
     margin: 10px;
